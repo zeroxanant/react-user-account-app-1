@@ -1,0 +1,53 @@
+body {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.center-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card,
+.dashboard-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeUp 0.4s ease;
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+button {
+  border-radius: 8px;
+}
+button:hover {
+  transform: translateY(-1px);
+  transition: 0.2s ease;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
